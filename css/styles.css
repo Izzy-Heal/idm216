@@ -1,0 +1,237 @@
+/* IDM 216 Team Page */
+/* Tushar Rai - Project Manager/Designer */
+/* Dylan Roussin - Coder/Data Architect */
+/* Izzy Heal - Designer/Coder */
+/* Alex Eyo - Data Architect/Project Manager */
+
+/* set colors as custom properties */
+:root {
+  --blue: #afbbea;
+  --gray: #8c8c8c;
+  --green: #b4dfad;
+  --orange: #f1b878; 
+  --pink: #dda4cc;
+  --white: #fff;
+}
+
+/*  import fonts */
+
+/* Yellowtail - https://fonts.google.com/specimen/Yellowtail */
+@font-face {
+  font-family: "Yellowtail";
+  src: url(/fonts/Yellowtail-Regular.ttf) format("truetype");
+}
+
+/* Yaldevi - https://fonts.google.com/specimen/Yaldevi */
+@font-face {
+  font-family: "Yaldevi-Regular";
+  src: url(/fonts/Yaldevi-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Yaldevi-SemiBold";
+  src: url(/fonts/Yaldevi-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Algera";
+  src: url(/fonts/Algera.otf) format("opentype");
+}
+
+/* center all content, 90vh (as opposed to 100vh) moves content slightly up the page to center better */
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 95vh;
+}
+
+/* allow content to scale with size of viewport */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* center header and set header font-family */
+.header {
+  display: flex;
+  font-family: "Yellowtail";
+  font-size: 1.25rem;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+span {
+  font-family: "Algera";
+}
+
+/* set color, font, and position of name text */
+h2 {
+  bottom: 15px;
+  color: var(--white);
+  font-family: "Yaldevi-SemiBold";
+  left: 10px;
+  margin: 0;
+  position: absolute;
+}
+
+/* center image and description content, make it a row  */
+.team-content {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+}
+
+/* set size of each */
+.team-member {
+  padding: 1.3rem;
+  width: 15rem;
+}
+
+/* name text now uses the image as positional reference */
+.team-img {
+  position: relative;
+}
+
+/* lines up the edge of the image and image shadow with the border of the description */
+img {
+  width: 95%;
+}
+
+/* creates space between the description and image as well as sets the font-family of the description */
+.team-desc {
+  font-family: "Yaldevi-Regular";
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+/* gray color for secondary role and decrease font size */
+.secondary-role {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.email {
+  padding-top: 0.1rem;
+  font-size: 0.95rem;
+}
+
+.response-time {
+  font-size: 0.9rem;
+}
+
+/* creates space between the description text and border */
+.team-desc p {
+  margin: .25rem;
+}
+
+/* set the unique colors of each team member */
+
+/* Tushar */
+#tushar-desc {
+  border: 10px solid var(--orange);
+}
+#tushar-img {
+  box-shadow: 10px 10px 0px 0px var(--orange);
+}
+
+/* Dylan */
+#dylan-desc {
+  border: 10px solid var(--green);
+}
+#dylan-img {
+  box-shadow: 10px 10px 0px 0px var(--green);
+}
+
+/* Izzy */
+#izzy-desc {
+  border: 10px solid var(--pink);
+}
+#izzy-img {
+  box-shadow: 10px 10px 0px 0px var(--pink);
+}
+
+/* Alex */
+#alex-desc {
+  border: 10px solid var(--blue);
+}
+#alex-img { 
+  box-shadow: 10px 10px 0px 0px var(--blue);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .team-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    padding: 1.3rem;
+    width: 70%;
+  }
+
+
+  .header {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  /* set the unique colors of each team member */
+
+  /* Tushar */
+  #tushar-desc {
+    border: 12px solid var(--orange);
+  }
+  #tushar-img {
+    box-shadow: 18px 13px 0px 0px var(--orange);
+  }
+
+  /* Dylan */
+  #dylan-desc {
+    border: 12px solid var(--green);
+  }
+  #dylan-img {
+    box-shadow: 18px 13px 0px 0px var(--green);
+  }
+
+  /* Izzy */
+  #izzy-desc {
+    border: 12px solid var(--pink);
+  }
+  #izzy-img {
+    box-shadow: 18px 13px 0px 0px var(--pink);
+  }
+
+  /* Alex */
+  #alex-desc {
+    border: 12px solid var(--blue);
+  }
+  #alex-img { 
+    box-shadow: 18px 13px 0px 0px var(--blue);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .team-content {
+    max-width: 90%;
+  }
+
+  .wrapper {
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .team-desc p {
+    font-size: 0.8rem;
+  }
+}
