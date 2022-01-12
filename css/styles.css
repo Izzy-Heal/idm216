@@ -18,24 +18,24 @@
 
 /* Yellowtail - https://fonts.google.com/specimen/Yellowtail */
 @font-face {
-  font-family: "Yellowtail";
-  src: url(/fonts/Yellowtail-Regular.ttf) format("truetype");
+  font-family: Yellowtail;
+  src: url(../fonts/Yellowtail-Regular.ttf) format("truetype");
 }
 
 /* Yaldevi - https://fonts.google.com/specimen/Yaldevi */
 @font-face {
-  font-family: "Yaldevi-Regular";
-  src: url(/fonts/Yaldevi-Regular.ttf) format("truetype");
+  font-family: Yaldevi-Regular;
+  src: url(../fonts/Yaldevi-Regular.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "Yaldevi-SemiBold";
-  src: url(/fonts/Yaldevi-SemiBold.ttf) format("truetype");
+  font-family: Yaldevi-SemiBold;
+  src: url(../fonts/Yaldevi-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "Algera";
-  src: url(/fonts/Algera.otf) format("opentype");
+  font-family: Algera;
+  src: url(../fonts/Algera.otf) format("opentype");
 }
 
 /* center all content, 90vh (as opposed to 100vh) moves content slightly up the page to center better */
@@ -56,21 +56,21 @@ body {
 /* center header and set header font-family */
 .header {
   display: flex;
-  font-family: "Yellowtail";
+  font-family: Yellowtail;
   font-size: 1.25rem;
   justify-content: center;
   margin-bottom: 1.25rem;
 }
 
 span {
-  font-family: "Algera";
+  font-family: Algera;
 }
 
 /* set color, font, and position of name text */
 h2 {
   bottom: 15px;
   color: var(--white);
-  font-family: "Yaldevi-SemiBold";
+  font-family: Yaldevi-SemiBold;
   left: 10px;
   margin: 0;
   position: absolute;
@@ -101,7 +101,7 @@ img {
 
 /* creates space between the description and image as well as sets the font-family of the description */
 .team-desc {
-  font-family: "Yaldevi-Regular";
+  font-family: Yaldevi-Regular;
   margin-top: 1rem;
   font-size: 1.1rem;
 }
