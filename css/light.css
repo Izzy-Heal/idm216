@@ -7,22 +7,21 @@
 /* set colors as custom properties */
 :root {
   --blue: #afbbea;
-  --gray: #a2a2a2;
+  --gray: #8c8c8c;
   --green: #b4dfad;
   --orange: #f1b878; 
   --pink: #dda4cc;
   --white: #fff;
-  --background: #181A1B;
 }
 
 /*  import fonts */
 
-/* Algera https://www.dfonts.org/fonts/algera-font/ */
+
+/* Algera */
 @font-face {
   font-family: Algera;
   src: url(../fonts/Algera.otf) format("opentype");
 }
-
 
 /* Yaldevi - https://fonts.google.com/specimen/Yaldevi */
 @font-face {
@@ -37,13 +36,12 @@
 
 
 
-/* center all content */
+/* center all content, 90vh (as opposed to 100vh) moves content slightly up the page to center better */
 body {
   align-items: center;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
-  background-color: var(--background);
+  min-height: 95vh;
 }
 
 /* allow content to scale with size of viewport */
@@ -59,8 +57,9 @@ body {
   font-family: Algera;
   font-size: 1.25rem;
   justify-content: center;
-  color: var(--white);
+  margin-bottom: 1.25rem;
 }
+
 
 /* set color, font, and position of name text */
 h2 {
@@ -100,7 +99,6 @@ img {
   font-family: Yaldevi-Regular;
   margin-top: 1rem;
   font-size: 1.1rem;
-  color: var(--white);
 }
 
 /* gray color for secondary role and decrease font size */
@@ -109,13 +107,11 @@ img {
   font-size: 0.9rem;
 }
 
-/* slightly decrease size of email text, space slightly from title */
 .email {
   padding-top: 0.1rem;
   font-size: 0.95rem;
 }
 
-/* slightly decrease the font size of the response time */
 .response-time {
   font-size: 0.9rem;
 }
@@ -160,7 +156,7 @@ img {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .team-content {
     display: flex;
     flex-direction: column;
@@ -217,7 +213,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .team-content {
     max-width: 90%;
   }
