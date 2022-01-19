@@ -78,7 +78,7 @@ h2 {
 /* center image and description content, make it a row  */
 .team-content {
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   justify-content: center;
 }
 
@@ -102,25 +102,25 @@ img {
 .team-desc {
   font-family: Yaldevi-Regular;
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: var(--white);
 }
 
 /* gray color for secondary role and decrease font size */
 .secondary-role {
   color: var(--gray);
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 /* slightly decrease size of email text, space slightly from title */
 .email {
   padding-top: 0.1rem;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 /* slightly decrease the font size of the response time */
 .response-time {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* creates space between the description text and border */
@@ -175,7 +175,7 @@ img {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1254px) {
   .team-content {
     display: flex;
     flex-direction: column;
@@ -232,23 +232,6 @@ img {
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1024px) {
-  .team-content {
-    max-width: 90%;
-  }
-
-  .wrapper {
-    align-items: center;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  .team-desc p {
-    font-size: 0.8rem;
-  }
-}
 
 
 /* Wobble Vertical */
